@@ -43,6 +43,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="VeM-eR-Oj6">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                            <color key="textColor" red="0.0" green="0.098642639820000003" blue="0.39141136409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="A8R-U0-o3X" kind="relationship" relationship="rootViewController" id="lPL-EZ-wUK"/>
