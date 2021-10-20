@@ -6,12 +6,19 @@
 //
 
 import UIKit
+import RealmSwift
 
 class NewPlaceViewController: UITableViewController {
+    
+    var newPlace = Place()
 
     @IBOutlet weak var imageOfPlace: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        DispatchQueue.main.async {
+            self.newPlace.savePlace()
+        }
         
         tableView.tableFooterView = UIView()
     }
