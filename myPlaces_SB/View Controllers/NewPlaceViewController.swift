@@ -23,6 +23,7 @@ class NewPlaceViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         tableView.tableFooterView = UIView()
         saveButton.isEnabled = false
         placeName.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
@@ -85,17 +86,14 @@ class NewPlaceViewController: UITableViewController {
         
         if currentPlace != nil {
             try! realm.write {
-                
-            currentPlace?.name = newPlace.name
-            currentPlace?.location = newPlace.location
-            currentPlace?.type = newPlace.type
-            currentPlace?.imageData = newPlace.imageData
+                currentPlace?.name = newPlace.name
+                currentPlace?.location = newPlace.location
+                currentPlace?.type = newPlace.type
+                currentPlace?.imageData = newPlace.imageData
             }
         } else {
             StorageManager.saveObject(newPlace)
         }
-        
-        
     }
     
     private func setupEditScreen() {
