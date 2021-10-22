@@ -242,7 +242,7 @@
                                             <outlet property="locationLabel" destination="9Qq-JS-CO4" id="au3-Ml-p49"/>
                                             <outlet property="nameLabel" destination="Vjc-xQ-0vp" id="dbR-jM-USs"/>
                                             <outlet property="typeLabel" destination="bHE-JF-7op" id="5RT-aC-Qov"/>
-                                            <segue destination="R3I-RG-kux" kind="show" identifier="showDetail" trigger="accessoryAction" id="iIU-bV-krN"/>
+                                            <segue destination="R3I-RG-kux" kind="show" identifier="showDetail" id="Dvc-uB-Qmn"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -336,7 +336,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="iIU-bV-krN"/>
+        <segue reference="Dvc-uB-Qmn"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="AZ" width="25" height="24"/>
